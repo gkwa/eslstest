@@ -87,8 +87,8 @@
         <user.username></user.username>
         <user.password></user.password>
         <grid2.hub></grid2.hub>
-        <site.url>http://streambox.com</site.url>
-        <browser.name></browser.name>
+        <site.url>http://livedev2.streambox.com/ls</site.url>
+        <browser.name>firefox</browser.name>
         <browser.version></browser.version>
         <browser.platform></browser.platform>
       </properties>

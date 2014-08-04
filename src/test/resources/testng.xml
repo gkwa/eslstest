@@ -2,9 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Tests" verbose="5" data-provider-thread-count="1">
 	<test name="Test1">
-		<parameter name="path" value="/"/>
+		<parameter name="path" value="/login.php"/>
 		<classes>
-		    <class name="com.streambox.eslstest.pages.HomePageTest"/>
+		    <class name="com.streambox.eslstest.pages.LoginPageLiveTest"/>
 		</classes>
 	</test>  
 </suite>
