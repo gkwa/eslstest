@@ -2,6 +2,11 @@ package com.streambox.eslstest.pages;
 
 import org.openqa.selenium.WebDriver;
 
+/*
+ * Abstract class representation of a Page in the UI. Page object pattern
+ * 
+ * @author Sebastiano Armeli-Battana
+ */
 public abstract class Page {
 
 	protected WebDriver webDriver;
@@ -21,10 +26,6 @@ public abstract class Page {
 
 	public String getTitle() {
 		return webDriver.getTitle();
-	}
-
-	public String getHTML() {
-		return webDriver.getPageSource();
 	}
 
 }

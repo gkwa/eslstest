@@ -15,7 +15,8 @@ cd webdriver-java-quickstart-archetype &&
 mvn install &&
 cd .. &&
 mvn archetype:generate -DarchetypeGroupId=ru.stqa.selenium -DarchetypeArtifactId=webdriver-java-quickstart-archetype -DarchetypeVersion=0.7 -DgroupId=com.streambox.$artifactid -DartifactId=$artifactid -DinteractiveMode=false &&
-cd $artifactid && mvn test
+cd $artifactid &&
+mvn test
 ```
 
 * windows
