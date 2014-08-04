@@ -1,12 +1,15 @@
-test: eslstest
+archtypeid=eslstest
+archetypeArtifactId=webdriver-java-quickstart-archetype
+
+test: $(archtypeid)
 	cd $< && mvn test
 
-webdriver-java-quickstart-archetype:
+$(archtypeid): $(archetypeArtifactId)
+	mvn archetype:generate -DarchetypeGroupId=ru.stqa.selenium -DarchetypeArtifactId=$(archetypeArtifactId) -DarchetypeVersion=0.7 -DgroupId=com.streambox.$@ -DartifactId=$@ -DinteractiveMode=false
+
+$(archetypeArtifactId):
 	git clone git://github.com/barancev/$@.git
 	cd $@ && mvn install
 
-eslstest:
-	mvn archetype:generate -DarchetypeGroupId=ru.stqa.selenium -DarchetypeArtifactId=webdriver-java-quickstart-archetype -DarchetypeVersion=0.7 -DgroupId=com.streambox.$@ -DartifactId=$@ -DinteractiveMode=false
-
 clean:
-	rm -rf eslstest/target
+	rm -rf $(archtypeid)/target
