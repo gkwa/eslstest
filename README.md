@@ -14,7 +14,7 @@ git clone git://github.com/barancev/webdriver-java-quickstart-archetype.git &&
 cd webdriver-java-quickstart-archetype &&
 mvn install &&
 cd .. &&
-mkdir $artifactid && cd $artifactid && mvn archetype:generate -DarchetypeGroupId=ru.stqa.selenium -DarchetypeArtifactId=webdriver-java-quickstart-archetype -DarchetypeVersion=0.7 -DgroupId=com.streambox.$artifactid -DartifactId=$artifactid -DinteractiveMode=false &&
+mvn archetype:generate -DarchetypeGroupId=ru.stqa.selenium -DarchetypeArtifactId=webdriver-java-quickstart-archetype -DarchetypeVersion=0.7 -DgroupId=com.streambox.$artifactid -DartifactId=$artifactid -DinteractiveMode=false &&
 cd $artifactid && mvn test
 ```
 
