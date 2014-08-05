@@ -21,7 +21,7 @@ import com.streambox.eslstest.webdriver.WebDriverFactory;
 
 /*
  * Base class for all the test classes
- * 
+ *
  * @author Sebastiano Armeli-Battana
  */
 

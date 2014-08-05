@@ -9,7 +9,7 @@ import com.gargoylesoftware.htmlunit.WebClient;
 
 /*
  * Class extending HtmlUnitDriver to support BASIC authentication
- * 
+ *
  * @author Sebastiano Armeli-Battana
  */
 public class AuthenticatedHtmlUnitDriver extends HtmlUnitDriver {

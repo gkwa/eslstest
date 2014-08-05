@@ -25,7 +25,7 @@ import com.streambox.eslstest.util.Browser;
 
 /*
  * Factory to instantiate a WebDriver object. It returns an instance of the driver (local invocation) or an instance of RemoteWebDriver
- * 
+ *
  * @author Sebastiano Armeli-Battana
  */
 public class WebDriverFactory {
