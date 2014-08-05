@@ -88,7 +88,7 @@
         <user.password></user.password>
         <grid2.hub></grid2.hub>
         <site.url>http://livedev2.streambox.com/ls</site.url>
-        <browser.name>firefox</browser.name>
+        <browser.name>chrome</browser.name>
         <browser.version></browser.version>
         <browser.platform></browser.platform>
       </properties>
