@@ -86,7 +86,7 @@
         <env>local</env>
         <user.username></user.username>
         <user.password></user.password>
-        <grid2.hub></grid2.hub>
+        <grid2.hub>http://selenium-hub1.streambox.com:4444/wd/hub</grid2.hub>
         <site.url>http://livedev2.streambox.com/ls</site.url>
         <browser.name>firefox</browser.name>
         <browser.version></browser.version>
