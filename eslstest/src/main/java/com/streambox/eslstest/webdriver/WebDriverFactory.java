@@ -11,6 +11,7 @@ import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.safari.SafariOptions;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -106,6 +107,9 @@ public class WebDriverFactory {
 			capability = DesiredCapabilities.opera();
 		} else if (SAFARI.equals(browserName)) {
 			capability = DesiredCapabilities.safari();
+			SafariOptions safariOptions = new SafariOptions();
+			safariOptions.setUseCleanSession(true);
+			capability.setCapability(SafariOptions.CAPABILITY, safariOptions);
 		} else {
 
 			capability = DesiredCapabilities.htmlUnit();
