@@ -81,9 +81,9 @@
   <!-- profiles -->
   <profiles>
     <profile>
-      <id>local</id>
+      <id>firefox</id>
       <properties>
-        <env>local</env>
+        <env>firefox</env>
         <user.username></user.username>
         <user.password></user.password>
         <grid2.hub>http://selenium-hub1.streambox.com:4444/wd/hub</grid2.hub>
@@ -96,6 +96,60 @@
         <activeByDefault>true</activeByDefault>
       </activation>
     </profile>
+
+
+    <profile>
+      <id>chrome</id>
+      <properties>
+        <env>chrome</env>
+        <user.username></user.username>
+        <user.password></user.password>
+        <grid2.hub>http://selenium-hub1.streambox.com:4444/wd/hub</grid2.hub>
+        <site.url>http://livedev2.streambox.com/ls</site.url>
+        <browser.name>chrome</browser.name>
+        <browser.version></browser.version>
+        <browser.platform></browser.platform>
+      </properties>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+    </profile>
+
+    <profile>
+      <id>safari</id>
+      <properties>
+        <env>safari</env>
+        <user.username></user.username>
+        <user.password></user.password>
+        <grid2.hub>http://selenium-hub1.streambox.com:4444/wd/hub</grid2.hub>
+        <site.url>http://livedev2.streambox.com/ls</site.url>
+        <browser.name>safari</browser.name>
+        <browser.version></browser.version>
+        <browser.platform></browser.platform>
+      </properties>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+    </profile>
+
+    <profile>
+      <id>ie</id>
+      <properties>
+        <env>ie</env>
+        <user.username></user.username>
+        <user.password></user.password>
+        <grid2.hub>http://selenium-hub1.streambox.com:4444/wd/hub</grid2.hub>
+        <site.url>http://livedev2.streambox.com/ls</site.url>
+        <browser.name>ie</browser.name>
+        <browser.version></browser.version>
+        <browser.platform></browser.platform>
+      </properties>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+    </profile>
+
+
     <profile>
       <id>dev</id>
       <properties>
