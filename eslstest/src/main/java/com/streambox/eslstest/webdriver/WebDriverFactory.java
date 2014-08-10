@@ -101,6 +101,7 @@ public class WebDriverFactory {
 			.setCapability(
 					InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,
 					true);
+			capability.setCapability("ie.ensureCleanSession", true);
 		} else if (PHANTOMJS.equals(browserName)) {
 			capability = DesiredCapabilities.phantomjs();
 		} else if (OPERA.equals(browserName)) {
