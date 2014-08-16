@@ -6,6 +6,7 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
+
 public class LivePageLive extends Page {
 
 	@FindBy(xpath="//a[@name='slsmap']") protected WebElement liveTabLink;

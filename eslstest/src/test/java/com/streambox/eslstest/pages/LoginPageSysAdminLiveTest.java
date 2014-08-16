@@ -6,10 +6,11 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class LoginPageLiveTest extends TestBase {
+public class LoginPageSysAdminLiveTest extends TestBase {
 
 	LoginPageSysAdminLive loginPage;
 	LivePageSysAdminLive livePage;
+	AccountsPageLive accountsPage;
 
 	@Parameters({ "path" })
 	@BeforeClass
@@ -27,7 +28,9 @@ public class LoginPageLiveTest extends TestBase {
 		livePage.archiveTabClick();
 		Thread.sleep(1000);
 		livePage.liveTabClick();
-		Thread.sleep(5000);
+		Thread.sleep(1000);
+		accountsPage = livePage.goToAccountsPage();
+		Thread.sleep(10000);
 	}
 
 	@Test
