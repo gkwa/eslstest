@@ -4,6 +4,7 @@ The key here is that we do the mvn install step because the module we
 install is referenced later from the .m2 catalog.
 
 ```sh
+export JAVA_HOME=$(/usr/libexec/java_home) &&
 artifactid=eslstest &&
 cd &&
 d=$(date +%m%d%H%M) &&
